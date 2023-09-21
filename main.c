@@ -4,18 +4,17 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	char c;
-	int i;
+	int a;
+	int b;
 	
+	printf("분자를 입력하세요: ");
+	scanf("%d", &a);
 	
-	printf("enter a character : ");
-	scanf("%c", &c);
-	i=c;
+	printf("분모를 입력하세요: ");
+	scanf("%d", &b);
 	
-	printf("The next character of %c (%i) is %c (%i)",c,i,c+1,i+1);
+	printf("나누기의 결과는%f 입니다.", (float)a/b);
+	 
 	
-	
-	
-
 	return 0;
 }
